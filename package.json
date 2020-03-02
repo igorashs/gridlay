@@ -1,0 +1,26 @@
+{
+  "name": "gridlay",
+  "version": "0.0.1",
+  "description": "grid-based framework",
+  "scripts": {
+    "sass": "sass scss/main.scss css/gridlay.css",
+    "sass-watch": "sass --watch scss/main.scss css/gridlay.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorashs/gridlay.git"
+  },
+  "keywords": [
+    "grid-layout",
+    "grid-framework"
+  ],
+  "author": "igorashs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igorashs/gridlay/issues"
+  },
+  "homepage": "https://github.com/igorashs/gridlay#readme",
+  "devDependencies": {
+    "sass": "^1.26.2"
+  }
+}
