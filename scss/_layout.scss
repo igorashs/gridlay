@@ -1,0 +1,116 @@
+// responsive breakpoints
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$max-container-width: 1310px;
+$fluid-container-width: 100%;
+$cols-count: 12;
+
+$gutter-width: 10px;
+
+.container {
+  width: $max-container-width;
+  max-width: $max-container-width;
+  margin: 0 auto;
+}
+
+.fluid-container {
+  width: $fluid-container-width;
+}
+
+.f-row {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+// default auto
+.f-col {
+  flex: 1 0;
+  max-width: 100%;
+}
+
+// 1-12 cols percentage of width
+@for $i from 1 through 12 {
+  $p: percentage($i / $cols-count);
+
+  .f-col-#{$i} {
+    width: $p;
+    flex-basis: $p;
+  }
+}
+
+@media (min-width: $sm) {
+  // responsive col from small screen size
+  @for $i from 1 through 12 {
+    $p: percentage($i / $cols-count);
+
+    .f-col-sm-#{$i} {
+      width: $p;
+      flex-basis: $p;
+    }
+  }
+
+  // auto col from small screen size
+  .f-col-sm {
+    flex: 1 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $md) {
+  // responsive col from medium screen size
+  @for $i from 1 through 12 {
+    $p: percentage($i / $cols-count);
+
+    .f-col-md-#{$i} {
+      width: $p;
+      flex-basis: $p;
+    }
+  }
+
+  // auto col from medium screen size
+  .f-col-md {
+    flex: 1 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $lg) {
+  // responsive col from large screen size
+  @for $i from 1 through 12 {
+    $p: percentage($i / $cols-count);
+
+    .f-col-lg-#{$i} {
+      width: $p;
+      flex-basis: $p;
+    }
+  }
+
+  // auto col from large screen size
+  .f-col-lg {
+    flex: 1 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $xl) {
+  // responsive col from extra large screen size
+  @for $i from 1 through 12 {
+    $p: percentage($i / $cols-count);
+
+    .f-col-xl-#{$i} {
+      width: $p;
+      flex-basis: $p;
+    }
+  }
+
+  // auto col from extra large screen size
+  .f-col-xl {
+    flex: 1 0;
+    max-width: 100%;
+  }
+}
