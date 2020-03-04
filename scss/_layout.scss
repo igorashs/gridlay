@@ -11,20 +11,32 @@ $cols-count: 12;
 
 $gutter-width: 10px;
 
+%overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .container {
   width: $max-container-width;
   max-width: $max-container-width;
   margin: 0 auto;
+  @extend %overflow-x-hidden;
 }
 
 .fluid-container {
   width: $fluid-container-width;
+  @extend %overflow-x-hidden;
 }
 
 .f-row {
   display: flex;
   flex-wrap: wrap;
-  min-width: 100%;
+  margin-right: -$gutter-width / 2;
+  margin-left: -$gutter-width / 2;
+}
+
+.f-row > * {
+  margin-right: $gutter-width / 2;
+  margin-left: $gutter-width / 2;
 }
 
 // default auto
@@ -112,5 +124,19 @@ $gutter-width: 10px;
   .f-col-xl {
     flex: 1 0;
     max-width: 100%;
+  }
+}
+
+// remove the gutter
+%no-x-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.f-row.no-gap {
+  @extend %no-x-margin;
+
+  & > * {
+    @extend %no-x-margin;
   }
 }
