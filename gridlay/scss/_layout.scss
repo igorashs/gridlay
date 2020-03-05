@@ -1,20 +1,38 @@
 // responsive breakpoints
-
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
+// global vars for containers
 $max-container-width: 1310px;
 $fluid-container-width: 100%;
-$cols-count: 12;
 
+// global vars for flex based grid
+$cols-count: 12;
 $gutter-width: 10px;
 
+// hides x overflow
 %overflow-x-hidden {
   overflow-x: hidden;
 }
 
+// removes the gutters
+%no-x-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// removes gutters from flex grid elements
+.f-row.no-gap {
+  @extend %no-x-margin;
+
+  & > * {
+    @extend %no-x-margin;
+  }
+}
+
+// centered container if viewport width is bigger than max-container-width
 .container {
   width: $max-container-width;
   max-width: $max-container-width;
@@ -22,11 +40,13 @@ $gutter-width: 10px;
   @extend %overflow-x-hidden;
 }
 
+// fluid container equal to viewport width
 .fluid-container {
   width: $fluid-container-width;
   @extend %overflow-x-hidden;
 }
 
+// flex row for flex based grid
 .f-row {
   display: flex;
   flex-wrap: wrap;
@@ -34,6 +54,7 @@ $gutter-width: 10px;
   margin-left: -$gutter-width / 2;
 }
 
+// adds gutters for flex-row children
 .f-row > * {
   margin-right: $gutter-width / 2;
   margin-left: $gutter-width / 2;
@@ -46,7 +67,7 @@ $gutter-width: 10px;
 }
 
 // 1-12 cols percentage of width
-@for $i from 1 through 12 {
+@for $i from 1 through $cols-count {
   $p: percentage($i / $cols-count);
 
   .f-col-#{$i} {
@@ -55,9 +76,10 @@ $gutter-width: 10px;
   }
 }
 
+// media query for small screen size
 @media (min-width: $sm) {
   // responsive col from small screen size
-  @for $i from 1 through 12 {
+  @for $i from 1 through $cols-count {
     $p: percentage($i / $cols-count);
 
     .f-col-sm-#{$i} {
@@ -73,9 +95,10 @@ $gutter-width: 10px;
   }
 }
 
+// media query for medium screen size
 @media (min-width: $md) {
   // responsive col from medium screen size
-  @for $i from 1 through 12 {
+  @for $i from 1 through $cols-count {
     $p: percentage($i / $cols-count);
 
     .f-col-md-#{$i} {
@@ -91,9 +114,10 @@ $gutter-width: 10px;
   }
 }
 
+// media query for large screen size
 @media (min-width: $lg) {
   // responsive col from large screen size
-  @for $i from 1 through 12 {
+  @for $i from 1 through $cols-count {
     $p: percentage($i / $cols-count);
 
     .f-col-lg-#{$i} {
@@ -109,9 +133,10 @@ $gutter-width: 10px;
   }
 }
 
+// media query for extra large screen size
 @media (min-width: $xl) {
   // responsive col from extra large screen size
-  @for $i from 1 through 12 {
+  @for $i from 1 through $cols-count {
     $p: percentage($i / $cols-count);
 
     .f-col-xl-#{$i} {
@@ -124,19 +149,5 @@ $gutter-width: 10px;
   .f-col-xl {
     flex: 1 0;
     max-width: 100%;
-  }
-}
-
-// remove the gutter
-%no-x-margin {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.f-row.no-gap {
-  @extend %no-x-margin;
-
-  & > * {
-    @extend %no-x-margin;
   }
 }
