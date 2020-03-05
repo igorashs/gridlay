@@ -91,6 +91,23 @@ $gutter-width: 10px;
   flex-wrap: nowrap;
 }
 
+// change flex direction
+.f-direction-col {
+  flex-direction: column;
+}
+
+.f-direction-row {
+  flex-direction: row;
+}
+
+.f-direction-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.f-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
 // flex utility classes
 .align-items-start {
   align-items: flex-start;
@@ -215,6 +232,23 @@ $gutter-width: 10px;
   // make flex nowrap from sm size
   .f-nowrap-sm {
     flex-wrap: nowrap;
+  }
+
+  // change flex direction from sm
+  .f-direction-col-sm {
+    flex-direction: column;
+  }
+
+  .f-direction-row-sm {
+    flex-direction: row;
+  }
+
+  .f-direction-col-reverse-sm {
+    flex-direction: column-reverse;
+  }
+
+  .f-direction-row-reverse-sm {
+    flex-direction: row-reverse;
   }
 
   // flex utility classes from sm size
@@ -344,6 +378,23 @@ $gutter-width: 10px;
     flex-wrap: nowrap;
   }
 
+  // change flex direction from md
+  .f-direction-col-md {
+    flex-direction: column;
+  }
+
+  .f-direction-row-md {
+    flex-direction: row;
+  }
+
+  .f-direction-col-reverse-md {
+    flex-direction: column-reverse;
+  }
+
+  .f-direction-row-reverse-md {
+    flex-direction: row-reverse;
+  }
+
   // flex utility classes from md size
   .align-items-start-md {
     align-items: flex-start;
@@ -471,6 +522,23 @@ $gutter-width: 10px;
     flex-wrap: nowrap;
   }
 
+  // change flex direction from lg
+  .f-direction-col-lg {
+    flex-direction: column;
+  }
+
+  .f-direction-row-lg {
+    flex-direction: row;
+  }
+
+  .f-direction-col-reverse-lg {
+    flex-direction: column-reverse;
+  }
+
+  .f-direction-row-reverse-lg {
+    flex-direction: row-reverse;
+  }
+
   // flex utility classes from lg size
   .align-items-start-lg {
     align-items: flex-start;
@@ -596,6 +664,23 @@ $gutter-width: 10px;
   // make flex nowrap from xl size
   .f-nowrap-xl {
     flex-wrap: nowrap;
+  }
+
+  // change flex direction from xl
+  .f-direction-col-xl {
+    flex-direction: column;
+  }
+
+  .f-direction-row-xl {
+    flex-direction: row;
+  }
+
+  .f-direction-col-reverse-xl {
+    flex-direction: column-reverse;
+  }
+
+  .f-direction-row-reverse-xl {
+    flex-direction: row-reverse;
   }
 
   // flex utility classes from xl size
