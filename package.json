@@ -1,6 +1,6 @@
 {
   "name": "gridlay",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "grid-based framework",
   "scripts": {
     "sass": "sass gridlay/scss/gridlay.scss css/gridlay.css",
