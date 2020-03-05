@@ -3,9 +3,9 @@
   "version": "0.0.2",
   "description": "grid-based framework",
   "scripts": {
-    "sass": "sass gridlay/scss/main.scss css/gridlay.css",
-    "sass-watch": "sass --watch gridlay/scss/main.scss css/gridlay.css",
-    "sass-build": "sass gridlay/scss/main.scss css/gridlay.min.css --style compressed"
+    "sass": "sass gridlay/scss/gridlay.scss css/gridlay.css",
+    "sass-watch": "sass --watch gridlay/scss/gridlay.scss css/gridlay.css",
+    "sass-build": "sass gridlay/scss/gridlay.scss css/gridlay.min.css --style compressed"
   },
   "repository": {
     "type": "git",
