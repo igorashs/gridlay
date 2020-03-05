@@ -25,7 +25,6 @@ $gutter-width: 10px;
 
 // centered container if viewport width is bigger than max-container-width
 .container {
-  width: $max-container-width;
   max-width: $max-container-width;
   margin: 0 auto;
   @extend %overflow-x-hidden;
@@ -76,9 +75,37 @@ $gutter-width: 10px;
   }
 }
 
-// flex container
-.f-box {
+// display utilities
+.d-none {
+  display: none;
+}
+
+.d-flex {
   display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline-grid {
+  display: inline-grid;
 }
 
 // make flex wrap
@@ -219,9 +246,37 @@ $gutter-width: 10px;
     max-width: 100%;
   }
 
-  // flex container from sm size
-  .f-box-sm {
+  // display utilities from sm
+  .d-none-sm {
+    display: none;
+  }
+
+  .d-flex-sm {
     display: flex;
+  }
+
+  .d-inline-flex-sm {
+    display: inline-flex;
+  }
+
+  .d-block-sm {
+    display: block;
+  }
+
+  .d-inline-sm {
+    display: inline;
+  }
+
+  .d-inline-block-sm {
+    display: inline-block;
+  }
+
+  .d-grid-sm {
+    display: grid;
+  }
+
+  .d-inline-grid-sm {
+    display: inline-grid;
   }
 
   // make flex wrap from sm size
@@ -363,9 +418,37 @@ $gutter-width: 10px;
     max-width: 100%;
   }
 
-  // flex container from medium screen size
-  .f-box-md {
+  // display utilities from md
+  .d-none-md {
+    display: none;
+  }
+
+  .d-flex-md {
     display: flex;
+  }
+
+  .d-inline-flex-md {
+    display: inline-flex;
+  }
+
+  .d-block-md {
+    display: block;
+  }
+
+  .d-inline-md {
+    display: inline;
+  }
+
+  .d-inline-block-md {
+    display: inline-block;
+  }
+
+  .d-grid-md {
+    display: grid;
+  }
+
+  .d-inline-grid-md {
+    display: inline-grid;
   }
 
   // make flex wrap from md size
@@ -507,9 +590,37 @@ $gutter-width: 10px;
     max-width: 100%;
   }
 
-  // flex container from lg screen size
-  .f-box-lg {
+  // display utilities from lg
+  .d-none-lg {
+    display: none;
+  }
+
+  .d-flex-lg {
     display: flex;
+  }
+
+  .d-inline-flex-lg {
+    display: inline-flex;
+  }
+
+  .d-block-lg {
+    display: block;
+  }
+
+  .d-inline-lg {
+    display: inline;
+  }
+
+  .d-inline-block-lg {
+    display: inline-block;
+  }
+
+  .d-grid-lg {
+    display: grid;
+  }
+
+  .d-inline-grid-lg {
+    display: inline-grid;
   }
 
   // make flex wrap from lg size
@@ -651,9 +762,37 @@ $gutter-width: 10px;
     max-width: 100%;
   }
 
-  // flex container from xl screen size
-  .f-box-xl {
+  // display utilities from xl
+  .d-none-xl {
+    display: none;
+  }
+
+  .d-flex-xl {
     display: flex;
+  }
+
+  .d-inline-flex-xl {
+    display: inline-flex;
+  }
+
+  .d-block-xl {
+    display: block;
+  }
+
+  .d-inline-xl {
+    display: inline;
+  }
+
+  .d-inline-block-xl {
+    display: inline-block;
+  }
+
+  .d-grid-xl {
+    display: grid;
+  }
+
+  .d-inline-grid-xl {
+    display: inline-grid;
   }
 
   // make flex wrap from xl size
