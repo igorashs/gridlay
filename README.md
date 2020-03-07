@@ -18,7 +18,7 @@ npm run sass-build # output file in ./css/gridlay.min.css
 
 ## Demos
 
-> - [cloning The Odin Project]() **SOON** :shipit:
+> - [Cloning The Odin Project](https://github.com/igorashs/the-odin-project-page) :shipit:
 
 ## License
 
