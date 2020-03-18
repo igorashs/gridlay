@@ -7,6 +7,7 @@
 ```bash
 git clone https://github.com/igorashs/gridlay.git
 cd gridlay
+npm install
 npm run sass       # output file in ./css/gridlay.css
 # minified
 npm run sass-build # output file in ./css/gridlay.min.css
