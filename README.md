@@ -1,4 +1,4 @@
-# GridLay (Grid-based framework)
+# GridLay (Grid-based library)
 
 ## Getting Started
 
